@@ -9,9 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/__MACOSX" />
             <option value="$PROJECT_DIR$/lab00" />
             <option value="$PROJECT_DIR$/lab01" />
             <option value="$PROJECT_DIR$/lab02" />
+            <option value="$PROJECT_DIR$/lab03" />
+            <option value="$PROJECT_DIR$/lab04" />
+            <option value="$PROJECT_DIR$/lab05" />
           </set>
         </option>
       </GradleProjectSettings>
