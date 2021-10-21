@@ -7,7 +7,7 @@ public class MyQueueDLLBImpl<E> implements MyQueue<E> {
 
     /**
      * Add an elem at the start of the list
-     * @param x
+     * @param x type E
      */
     @Override
     public void enqueue(E x) {
@@ -23,7 +23,7 @@ public class MyQueueDLLBImpl<E> implements MyQueue<E> {
         if (!elems.isEmpty()) {
             return elems.removeLast() ;
         }
-        throw new IllegalStateException("To be implemented");
+        throw new RuntimeException("To be implemented");
     }
 
     /**
@@ -41,6 +41,18 @@ public class MyQueueDLLBImpl<E> implements MyQueue<E> {
      */
     @Override
     public E peek() {
-        return elems.peek();
+        if (!isEmpty()){
+            return elems.getLast();
+        }
+        throw new RuntimeException("null");
+    }
+
+    /**
+     *
+     * @return queue string
+     */
+    @Override
+    public String toString(){
+        return "Queue{" + elems.toString() + "}";
     }
 }

@@ -13,12 +13,12 @@ public class MyStackDLLBImpl<E> implements MyStack<E> {
         if (!elems.isEmpty()) {
             return elems.removeLast();
         }
-        throw new IllegalStateException("No values");
+        throw new RuntimeException("No values");
     }
 
     /**
      * push l'element to the end
-     * @param x
+     * @param x type E
      */
     @Override
     public void push(E x) {
@@ -41,5 +41,14 @@ public class MyStackDLLBImpl<E> implements MyStack<E> {
     @Override
     public E peek() {
         return  elems.peek();
+    }
+
+    /**
+     *
+     * @return stack string
+     */
+    @Override
+    public String toString(){
+        return "Stack{" + elems.toString() + "}";
     }
 }

@@ -20,17 +20,20 @@ class MyStackDLLBImplTest {
 
     @Test
     void pop() {
+        MyStack<Integer> stackOfInts = MyStack.create();
+        stackOfInts.push(1);
+        stackOfInts.push(2);
+        stackOfInts.push(3);
+        stackOfInts.pop();
+        assertEquals("Stack{DLinkList{ 1 2 }}", stackOfInts.toString());
     }
 
     @Test
     void push() {
-    }
-
-    @Test
-    void numOfElems() {
-    }
-
-    @Test
-    void peek() {
+        MyStack<Integer> stackOfInts = MyStack.create();
+        stackOfInts.push(1);
+        stackOfInts.push(2);
+        stackOfInts.push(3);
+        assertEquals("Stack{DLinkList{ 1 2 3 }}", stackOfInts.toString());
     }
 }
