@@ -82,6 +82,7 @@ public class Main {
         System.out.println("array ints = " + ints); // compare the output to the following
         System.out.println("l1 = " + l1);
         System.out.println("l1.size() = " + l1.size());
+
     }
 
     /**
